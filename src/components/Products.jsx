@@ -115,7 +115,7 @@ const Products = () => {
       if (!isPaused) {
         intervalRef.current = setInterval(() => {
           setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-        }, 1000);
+        }, 3000);
       }
     };
 
