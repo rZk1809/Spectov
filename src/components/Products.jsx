@@ -107,21 +107,32 @@ const Products = () => {
 
   // Auto-scroll testimonials
   useEffect(() => {
-    if (!isPaused) {
-      intervalRef.current = setInterval(() => {
-        setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-      }, 5000);
-    }
+    const startInterval = () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+      
+      if (!isPaused) {
+        intervalRef.current = setInterval(() => {
+          setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+        }, 1000);
+      }
+    };
+
+    startInterval();
 
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
     };
-  }, [testimonials.length, isPaused]);
+  }, [isPaused]); // Remove testimonials.length from dependencies
 
   const handleMouseEnter = () => {
     setIsPaused(true);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   };
 
   const handleMouseLeave = () => {
@@ -139,13 +150,15 @@ const Products = () => {
 
   const handleTestimonialClick = (index) => {
     setCurrentTestimonial(index);
+    // Restart the interval after manual selection
+    setIsPaused(false);
   };
 
   return (
     <div className="relative z-0 bg-primary min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section with pattern background overlay */}
       <section className="relative w-full h-screen mx-auto flex items-center justify-center">
-        <div className="absolute inset-0 bg-hero-pattern bg-cover bg-no-repeat bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-hero-pattern bg-cover bg-no-repeat bg-center opacity-20 z-[1]"></div>
         
         <div className={`${styles.paddingX} max-w-7xl mx-auto flex flex-col items-center justify-center text-center relative z-10`}>
           <motion.div
