@@ -20,7 +20,7 @@ The homepage is now more intuitive and engaging, making key information easier t
 1. **Clone the repository**
     ```bash
     git clone https://github.com/rZk1809/Spectov.git
-    cd defxv-product-platform
+    cd Spectov
     npm install
     npm run dev
     ```
