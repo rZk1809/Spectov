@@ -1,13 +1,13 @@
 # SpectoV
 
 **What I changed:**  
-I refactored the Spectov homepage by implementing internal routing and restructuring the component hierarchy for clarity and maintainability. The UI was redesigned to be more visually appealing and fully responsive (320px–1920px+), with optimized background assets via Tailwind CSS. Navigation was enhanced with scroll-to-top on mount, hash-based deep linking, and intelligent state management using useLocation, useState, and useEffect. I also added an auto-scrolling testimonials carousel, interactive feature cards using Tilt.js, and controlled forms for streamlined user input.
+Refactored the Spectov homepage with internal routing, a clearer component structure, and a visually refreshed, fully responsive UI (320px–1920px+). Enhanced navigation using scroll-to-top on mount, hash-based deep linking, and improved state management. Added an auto-scrolling testimonials carousel, Tilt.js-powered interactive feature cards, and controlled forms for engagement.
 
 **Why I changed it:**  
-These changes were driven by the need for a more user-friendly, modern, and maintainable homepage. Improved routing and state management provide smoother navigation and support for deep-linking. The visual and interactive enhancements aim to better capture user attention, while performance optimizations and responsive design ensure accessibility and usability across all devices.
+These updates were made to improve usability, maintainability, and visual appeal. Enhanced routing and state management create smoother navigation, while new interactive and responsive elements better engage users across all devices.
 
 **How it improves the original:**  
-The new homepage delivers a more intuitive and engaging user experience, making key information and actions easier to find and interact with. Accessibility is enhanced through semantic HTML and ARIA labels, supporting WCAG AA compliance. Improved navigation and dedicated product sections increase discoverability and conversion potential, while robust form management enables better lead generation. The refactored architecture also lays the groundwork for future analytics, SEO improvements, and A/B testing, aligning the platform with both user and business goals.
+The homepage is now more intuitive and engaging, making key information easier to access. Accessibility improvements and clear navigation boost discoverability and conversion potential, while robust form handling aids lead generation. The structure also sets a strong foundation for SEO, analytics, and future growth.
 
 
 ## Getting Started
