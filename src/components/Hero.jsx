@@ -15,9 +15,9 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>DefXV</span>
-          </h1>
+        <h1 className={`${styles.heroHeadText} text-white`}>
+  This is <span className='text-[#915EFF]'>DefXV</span>
+</h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           Redefining Reality with <br className='sm:block hidden' />
           SpectoV's AR Revolution
