@@ -1,5 +1,9 @@
 # SpectoV
 
+[View the live app →](https://spectov-app.onrender.com)
+
+---
+
 **What I changed:**  
 Refactored the Spectov homepage with internal routing, a clearer component structure, and a visually refreshed, fully responsive UI (320px–1920px+). Enhanced navigation using scroll-to-top on mount, hash-based deep linking, and improved state management. Added an auto-scrolling testimonials carousel, Tilt.js-powered interactive feature cards, and controlled forms for engagement.
 
@@ -9,13 +13,31 @@ These updates were made to improve usability, maintainability, and visual appeal
 **How it improves the original:**  
 The homepage is now more intuitive and engaging, making key information easier to access. Accessibility improvements and clear navigation boost discoverability and conversion potential, while robust form handling aids lead generation. The structure also sets a strong foundation for SEO, analytics, and future growth.
 
+---
 
 ## Getting Started
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-org/defxv-product-platform.git
-   cd defxv-product-platform
-   npm install
-   npm run dev
-   ```
+    ```bash
+    git clone https://github.com/your-org/defxv-product-platform.git
+    cd defxv-product-platform
+    npm install
+    npm run dev
+    ```
+
+2. **Open the app**  
+   Go to [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## Deployed Application
+
+You can try the latest version here:  
+👉 [https://spectov-app.onrender.com](https://spectov-app.onrender.com)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
